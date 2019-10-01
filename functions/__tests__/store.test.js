@@ -1,4 +1,5 @@
 const { getToken, setToken } = require('../store')
+const { mockToken } = require('../__samples__')
 const admin = require('firebase-admin')
 
 afterEach(() => {
@@ -6,15 +7,18 @@ afterEach(() => {
   jest.clearAllMocks()
 })
 
+function validateGetToken () {
+  expect(admin.database.mock.calls.length).toBe(1)
+  expect(admin.database.mock.calls[0][0]).toStrictEqual(undefined)
+  expect(admin.ref.mock.calls.length).toBe(1)
+  expect(admin.ref.mock.calls[0][0]).toStrictEqual('secrets/badgr')
+  expect(admin.once.mock.calls.length).toBe(1)
+  expect(admin.once.mock.calls[0][0]).toStrictEqual('child_added')
+}
+
 describe('Set Token', () => {
   test('Should store the data', async () => {
-    const tokenData = {
-      access_token: 'acc3ss_t0k3n',
-      token_type: 'Bearer',
-      expires_in: 86400,
-      refresh_token: 'r3fr3sh_t0k3n',
-      scope: 'rw:profile rw:issuer rw:backpack'
-    }
+    const tokenData = mockToken()
 
     await setToken(tokenData)
     expect(admin.database.mock.calls.length).toBe(1)
@@ -34,30 +38,14 @@ describe('Set Token', () => {
 })
 describe('Get Token', () => {
   test('Should return a valid token', async () => {
-    const tokenData = {
-      access_token: 'acc3ss_t0k3n',
-      token_type: 'Bearer',
-      expires_in: 86400,
-      refresh_token: 'r3fr3sh_t0k3n',
-      scope: 'rw:profile rw:issuer rw:backpack'
-    }
+    const tokenData = mockToken()
     admin.setDatabase({ 'secrets/badgr': tokenData })
     const token = await getToken()
     expect(token).toStrictEqual(tokenData)
-    expect(admin.database.mock.calls.length).toBe(1)
-    expect(admin.database.mock.calls[0][0]).toStrictEqual(undefined)
-    expect(admin.ref.mock.calls.length).toBe(1)
-    expect(admin.ref.mock.calls[0][0]).toStrictEqual('secrets/badgr')
-    expect(admin.once.mock.calls.length).toBe(1)
-    expect(admin.once.mock.calls[0][0]).toStrictEqual('child_added')
+    validateGetToken()
   })
   test('Should return an error if the token is not stored', async () => {
     await expect(getToken()).rejects.toThrowError('No token stored!')
-    expect(admin.database.mock.calls.length).toBe(1)
-    expect(admin.database.mock.calls[0][0]).toStrictEqual(undefined)
-    expect(admin.ref.mock.calls.length).toBe(1)
-    expect(admin.ref.mock.calls[0][0]).toStrictEqual('secrets/badgr')
-    expect(admin.once.mock.calls.length).toBe(1)
-    expect(admin.once.mock.calls[0][0]).toStrictEqual('child_added')
+    validateGetToken()
   })
 })
