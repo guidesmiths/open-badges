@@ -5,6 +5,7 @@ let dataDb = {}
 
 admin.initializeApp = jest.fn(() => {})
 admin.database = jest.fn(() => admin)
+admin.set = jest.fn(() => admin)
 admin.ref = jest.fn((path) => {
   lastRef = path
   return admin
