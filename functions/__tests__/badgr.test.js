@@ -1,8 +1,8 @@
 const { generateToken } = require('../badgr')
 const nock = require('nock')
 
-describe.only('Generate Token', () => {
-  test.only('It should generate a valid token', async () => {
+describe('Generate Token', () => {
+  test('It should generate a valid token', async () => {
     const response = {
       access_token: 'acc3ss_t0k3n',
       token_type: 'Bearer',
