@@ -7,9 +7,9 @@
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
     "logs": "firebase functions:log",
-    "test": "jest  --verbose ./**/*.test.js",
-    "test:coverage": "jest --verbose ./**/*.test.js --coverage",
-    "test:watch": "jest --verbose ./**/*.test.js --watchAll",
+    "test": "jest  --verbose",
+    "test:coverage": "jest --verbose  --coverage",
+    "test:watch": "jest --verbose  --watchAll",
     "lint": "standard",
     "lint:fix": "standard --fix"
   },
@@ -22,6 +22,7 @@
     ]
   },
   "dependencies": {
+    "email-validator": "^2.0.4",
     "firebase-admin": "^8.0.0",
     "firebase-functions": "^3.1.0",
     "request": "^2.88.0",
