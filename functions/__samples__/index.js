@@ -15,5 +15,5 @@ module.exports = {
   mockToken,
   mockBadgeClasses: getJSONContent('badgeclasses'),
   mockBadgeClassesAsserts: getJSONContent('badgeclassesasserts'),
-  mackBadgesList: getJSONContent('badgeslist')
+  mockBadgesList: getJSONContent('badgeslist')
 }

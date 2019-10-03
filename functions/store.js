@@ -26,6 +26,13 @@ async function saveAllBadges (list) {
   return admin.database().ref('data/badgr/badges').set(badges)
 }
 
+async function getAllBadges () {
+  const snapshot = await admin.database().ref('data/badgr/badges').once('value')
+  const data = snapshot.val()
+  if (data) return Object.values(data)
+  return []
+}
+
 module.exports = {
-  getToken, setToken, saveAllBadges
+  getToken, setToken, saveAllBadges, getAllBadges
 }
