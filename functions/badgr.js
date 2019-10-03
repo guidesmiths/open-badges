@@ -32,6 +32,23 @@ const getBadgesList = async () => {
   })
 }
 
+const getBadgeAssertions = async (badgeId) => {
+  if (!badgeId) throw new Error('Missing badgeId!')
+  const url = `https://api.badgr.io/v2/badgeclasses/${badgeId}/assertions`
+  const token = await getToken()
+  return rp({
+    method: 'GET',
+    url,
+    headers:
+    {
+      Authorization: `Bearer ${token.access_token}`
+    }
+  }).then(response => {
+    const responseData = JSON.parse(response)
+    return responseData.result
+  })
+}
+
 module.exports = {
-  generateToken, getBadgesList
+  generateToken, getBadgesList, getBadgeAssertions
 }
