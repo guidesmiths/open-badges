@@ -15,6 +15,17 @@ async function getToken () {
   return data
 }
 
+async function saveAllBadges (list) {
+  if (!Array.isArray(list)) throw (new Error('No list provided!'))
+
+  const badges = {}
+  list.forEach(badge => {
+    badges[badge.entityId] = badges
+  })
+
+  return admin.database().ref('data/badgr/badges').set(badges)
+}
+
 module.exports = {
-  getToken, setToken
+  getToken, setToken, saveAllBadges
 }

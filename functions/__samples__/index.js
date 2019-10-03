@@ -14,5 +14,6 @@ const getJSONContent = (filename) => () => JSON.parse(fs.readFileSync(path.join(
 module.exports = {
   mockToken,
   mockBadgeClasses: getJSONContent('badgeclasses'),
-  mockBadgeClassesAsserts: getJSONContent('badgeclassesasserts')
+  mockBadgeClassesAsserts: getJSONContent('badgeclassesasserts'),
+  mackBadgesList: getJSONContent('badgeslist')
 }
