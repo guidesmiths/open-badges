@@ -1,5 +1,5 @@
 const nock = require('nock')
-const { mockToken, mockBadgeClasses } = require('../__samples__/index')
+const { mockToken, mockBadgeClasses, mockBadgeClassesAsserts } = require('../__samples__/index')
 
 const mockTokenRequest = () => {
   nock('https://api.badgr.io/o/token')
@@ -18,4 +18,14 @@ const mockBadgeClassesRequest = (accessToken = mockToken().access_token) => {
     .reply(200, JSON.stringify(mockBadgeClasses()))
 }
 
-module.exports = { mockTokenRequest, mockBadgeClassesRequest }
+const mockBadgeClassesAssertsRequest = (badgeId, accessToken = mockToken().access_token) => {
+  nock('https://api.badgr.io/v2/', {
+    reqheaders: {
+      Authorization: `Bearer ${accessToken}`
+    }
+  })
+    .get(`/badgeclasses/${badgeId}/assertions`)
+    .reply(200, JSON.stringify(mockBadgeClassesAsserts()))
+}
+
+module.exports = { mockTokenRequest, mockBadgeClassesRequest, mockBadgeClassesAssertsRequest }

@@ -1,6 +1,6 @@
-const { generateToken, getBadgesList } = require('../badgr')
-const { mockToken, mockBadgeClasses } = require('../__samples__/index')
-const { mockTokenRequest, mockBadgeClassesRequest } = require('../__helpers__/index')
+const { generateToken, getBadgesList, getBadgeAssertions } = require('../badgr')
+const { mockToken, mockBadgeClasses, mockBadgeClassesAsserts } = require('../__samples__/index')
+const { mockTokenRequest, mockBadgeClassesRequest, mockBadgeClassesAssertsRequest } = require('../__helpers__/index')
 const admin = require('firebase-admin')
 
 afterEach(() => {
@@ -25,5 +25,22 @@ describe('handle API Rest', () => {
     const response = mockBadgeClasses()
     const list = await getBadgesList()
     expect(list).toStrictEqual(response.result)
+  })
+
+  test('It should return a list of asserts from an specific badge', async () => {
+    admin.setDatabase({ 'secrets/badgr': mockToken() })
+    const badgeId = 'badgeId-001'
+    mockBadgeClassesAssertsRequest(badgeId)
+
+    const response = mockBadgeClassesAsserts()
+    const list = await getBadgeAssertions(badgeId)
+    expect(list).toStrictEqual(response.result)
+  })
+
+  test('It should throw an error if the badgeId is missing', async () => {
+    admin.setDatabase({ 'secrets/badgr': mockToken() })
+    mockBadgeClassesAssertsRequest()
+
+    expect(getBadgeAssertions()).rejects.toEqual(new Error('Missing badgeId!'))
   })
 })
