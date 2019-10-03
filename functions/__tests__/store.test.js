@@ -1,5 +1,6 @@
-const { getToken, setToken, saveAllBadges, getAllBadges } = require('../store')
+const { getToken, setToken, saveAllBadges, getAllBadges, saveUserBadges } = require('../store')
 const { mockToken, mockBadgesList, mockBadgeClasses } = require('../__samples__')
+const { hashEmail } = require('../utils/index')
 const admin = require('firebase-admin')
 
 afterEach(() => {
@@ -94,5 +95,35 @@ describe('Get the badges list', () => {
     expect(admin.ref.mock.calls[0][0]).toStrictEqual('data/badgr/badges')
     expect(admin.once.mock.calls.length).toBe(1)
     expect(admin.once.mock.calls[0][0]).toStrictEqual('value')
+  })
+})
+
+describe('Store All the badges for an specific user', () => {
+  const badgesList = mockBadgeClasses().result
+  const badgesListToStore = mockBadgesList()
+  const userId = hashEmail('demo@demo.com')
+
+  test('Should store all the badges', async () => {
+    await saveUserBadges(userId, badgesList)
+    expect(admin.database.mock.calls.length).toBe(1)
+    expect(admin.database.mock.calls[0][0]).toStrictEqual(undefined)
+    expect(admin.ref.mock.calls.length).toBe(1)
+    expect(admin.ref.mock.calls[0][0]).toStrictEqual(`data/${userId}/badges`)
+    expect(admin.set.mock.calls.length).toBe(1)
+    expect(Object.keys(admin.set.mock.calls[0][0])).toStrictEqual(Object.keys(badgesListToStore))
+  })
+
+  test('Should return an error if there is no list', async () => {
+    expect(saveUserBadges(userId)).rejects.toThrowError('No list provided!')
+    expect(admin.database.mock.calls.length).toBe(0)
+    expect(admin.ref.mock.calls.length).toBe(0)
+    expect(admin.set.mock.calls.length).toBe(0)
+  })
+
+  test('Should return an error if there is no userId', async () => {
+    expect(saveUserBadges(undefined, badgesList)).rejects.toThrowError('No userId provided!')
+    expect(admin.database.mock.calls.length).toBe(0)
+    expect(admin.ref.mock.calls.length).toBe(0)
+    expect(admin.set.mock.calls.length).toBe(0)
   })
 })
