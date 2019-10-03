@@ -38,7 +38,7 @@ async function getAllBadges () {
 }
 
 async function saveUserBadges (userId, list) {
-  if (!userId) throw (new Error('No user provided!'))
+  if (!userId) throw (new Error('No userId provided!'))
   if (!Array.isArray(list)) throw (new Error('No list provided!'))
 
   const badges = badgesListTransformation(list)
@@ -46,7 +46,7 @@ async function saveUserBadges (userId, list) {
 }
 
 async function getUserBadges (userId) {
-  if (!userId) throw (new Error('No user provided!'))
+  if (!userId) throw (new Error('No userId provided!'))
 
   const snapshot = await admin.database().ref(`data/${userId}/badges`).once('value')
   const data = snapshot.val()
