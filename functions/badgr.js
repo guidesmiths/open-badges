@@ -1,7 +1,8 @@
 const functions = require('firebase-functions')
 const rp = require('request-promise')
+const { getToken } = require('./store')
 
-function generateToken () {
+const generateToken = () => {
   const { pass: password, user: username } = functions.config().badgr
   const url = 'https://api.badgr.io/o/token/'
   return rp({
@@ -14,6 +15,23 @@ function generateToken () {
         }
   }).then(data => JSON.parse(data))
 }
+
+const getBadgesList = async () => {
+  const url = 'https://api.badgr.io/v2/badgeclasses'
+  const token = await getToken()
+  return rp({
+    method: 'GET',
+    url,
+    headers:
+    {
+      Authorization: `Bearer ${token.access_token}`
+    }
+  }).then(response => {
+    const responseData = JSON.parse(response)
+    return responseData.result
+  })
+}
+
 module.exports = {
-  generateToken
+  generateToken, getBadgesList
 }
