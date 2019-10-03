@@ -45,6 +45,15 @@ async function saveUserBadges (userId, list) {
   return admin.database().ref(`data/${userId}/badges`).set(badges)
 }
 
+async function getUserBadges (userId) {
+  if (!userId) throw (new Error('No user provided!'))
+
+  const snapshot = await admin.database().ref(`data/${userId}/badges`).once('value')
+  const data = snapshot.val()
+  if (data) return Object.values(data)
+  return []
+}
+
 module.exports = {
-  getToken, setToken, saveAllBadges, getAllBadges, saveUserBadges
+  getToken, setToken, saveAllBadges, getAllBadges, saveUserBadges, getUserBadges
 }
