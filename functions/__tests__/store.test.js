@@ -1,4 +1,4 @@
-const { getToken, setToken, saveAllBadges, getAllBadges, saveUserBadges } = require('../store')
+const { getToken, setToken, saveAllBadges, getAllBadges, saveUserBadges, getUserBadges } = require('../store')
 const { mockToken, mockBadgesList, mockBadgeClasses } = require('../__samples__')
 const { hashEmail } = require('../utils/index')
 const admin = require('firebase-admin')
@@ -125,5 +125,45 @@ describe('Store All the badges for an specific user', () => {
     expect(admin.database.mock.calls.length).toBe(0)
     expect(admin.ref.mock.calls.length).toBe(0)
     expect(admin.set.mock.calls.length).toBe(0)
+  })
+})
+
+describe('Get the badges list for an specific user', () => {
+  const userId = hashEmail('demo@demo.com')
+  const dbPath = `data/${userId}/badges`
+
+  test('Should return the badges list (Array) for an specific user', async () => {
+    const badgesListStored = mockBadgesList()
+
+    const db = {}
+    db[dbPath] = badgesListStored
+
+    admin.setDatabase(db)
+    const list = await getUserBadges(userId)
+    expect(list).toStrictEqual(mockBadgeClasses().result)
+    expect(admin.database.mock.calls.length).toBe(1)
+    expect(admin.database.mock.calls[0][0]).toStrictEqual(undefined)
+    expect(admin.ref.mock.calls.length).toBe(1)
+    expect(admin.ref.mock.calls[0][0]).toStrictEqual(dbPath)
+    expect(admin.once.mock.calls.length).toBe(1)
+    expect(admin.once.mock.calls[0][0]).toStrictEqual('value')
+  })
+
+  test('Should return an error if there is no userId', async () => {
+    expect(getUserBadges()).rejects.toThrowError('No userId provided!')
+    expect(admin.database.mock.calls.length).toBe(0)
+    expect(admin.ref.mock.calls.length).toBe(0)
+    expect(admin.set.mock.calls.length).toBe(0)
+  })
+
+  test('Should return an empty array if there aren\'t badges stored for that specific userId.', async () => {
+    const list = await getUserBadges(userId)
+    expect(list).toStrictEqual([])
+    expect(admin.database.mock.calls.length).toBe(1)
+    expect(admin.database.mock.calls[0][0]).toStrictEqual(undefined)
+    expect(admin.ref.mock.calls.length).toBe(1)
+    expect(admin.ref.mock.calls[0][0]).toStrictEqual(dbPath)
+    expect(admin.once.mock.calls.length).toBe(1)
+    expect(admin.once.mock.calls[0][0]).toStrictEqual('value')
   })
 })
