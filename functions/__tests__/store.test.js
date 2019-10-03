@@ -1,5 +1,5 @@
-const { getToken, setToken, saveAllBadges } = require('../store')
-const { mockToken, mackBadgesList, mockBadgeClasses } = require('../__samples__')
+const { getToken, setToken, saveAllBadges, getAllBadges } = require('../store')
+const { mockToken, mockBadgesList, mockBadgeClasses } = require('../__samples__')
 const admin = require('firebase-admin')
 
 afterEach(() => {
@@ -53,7 +53,7 @@ describe('Get Token', () => {
 describe('Store badges list', () => {
   test('Should store the list provided', async () => {
     const badgesList = mockBadgeClasses().result
-    const badgesListToStore = mackBadgesList()
+    const badgesListToStore = mockBadgesList()
 
     await saveAllBadges(badgesList)
     expect(admin.database.mock.calls.length).toBe(1)
@@ -69,5 +69,30 @@ describe('Store badges list', () => {
     expect(admin.database.mock.calls.length).toBe(0)
     expect(admin.ref.mock.calls.length).toBe(0)
     expect(admin.set.mock.calls.length).toBe(0)
+  })
+})
+
+describe('Get the badges list', () => {
+  test('Should return the badges list (Array)', async () => {
+    const badgesListStored = mockBadgesList()
+    admin.setDatabase({ 'data/badgr/badges': badgesListStored })
+    const list = await getAllBadges()
+    expect(list).toStrictEqual(mockBadgeClasses().result)
+    expect(admin.database.mock.calls.length).toBe(1)
+    expect(admin.database.mock.calls[0][0]).toStrictEqual(undefined)
+    expect(admin.ref.mock.calls.length).toBe(1)
+    expect(admin.ref.mock.calls[0][0]).toStrictEqual('data/badgr/badges')
+    expect(admin.once.mock.calls.length).toBe(1)
+    expect(admin.once.mock.calls[0][0]).toStrictEqual('value')
+  })
+  test('Should return an empty array if the list is empty', async () => {
+    const list = await getAllBadges()
+    expect(list).toStrictEqual([])
+    expect(admin.database.mock.calls.length).toBe(1)
+    expect(admin.database.mock.calls[0][0]).toStrictEqual(undefined)
+    expect(admin.ref.mock.calls.length).toBe(1)
+    expect(admin.ref.mock.calls[0][0]).toStrictEqual('data/badgr/badges')
+    expect(admin.once.mock.calls.length).toBe(1)
+    expect(admin.once.mock.calls[0][0]).toStrictEqual('value')
   })
 })
