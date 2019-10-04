@@ -108,7 +108,7 @@ describe('Store All the badges for an specific user', () => {
     expect(admin.database.mock.calls.length).toBe(1)
     expect(admin.database.mock.calls[0][0]).toStrictEqual(undefined)
     expect(admin.ref.mock.calls.length).toBe(1)
-    expect(admin.ref.mock.calls[0][0]).toStrictEqual(`data/${userId}/badges`)
+    expect(admin.ref.mock.calls[0][0]).toStrictEqual(`data/users/${userId}/badges`)
     expect(admin.set.mock.calls.length).toBe(1)
     expect(Object.keys(admin.set.mock.calls[0][0])).toStrictEqual(Object.keys(badgesListToStore))
   })

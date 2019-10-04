@@ -24,7 +24,7 @@ const getBadgesList = async () => {
     url,
     headers:
     {
-      Authorization: `Bearer ${token.access_token}`
+      Authorization: `Bearer ${token}`
     }
   }).then(response => {
     const responseData = JSON.parse(response)
@@ -41,7 +41,7 @@ const getBadgeAssertions = async (badgeId) => {
     url,
     headers:
     {
-      Authorization: `Bearer ${token.access_token}`
+      Authorization: `Bearer ${token}`
     }
   }).then(response => {
     const responseData = JSON.parse(response)

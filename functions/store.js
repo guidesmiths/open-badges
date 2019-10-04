@@ -2,9 +2,10 @@ const functions = require('firebase-functions')
 const admin = require('firebase-admin')
 
 function badgesListTransformation (list) {
+  if (!Array.isArray(list)) throw (new Error('No list provided!'))
   const badges = {}
   list.forEach(badge => {
-    badges[badge.entityId] = badges
+    badges[badge.entityId] = badge
   })
   return badges
 }
@@ -42,7 +43,7 @@ async function saveUserBadges (userId, list) {
   if (!Array.isArray(list)) throw (new Error('No list provided!'))
 
   const badges = badgesListTransformation(list)
-  return admin.database().ref(`data/${userId}/badges`).set(badges)
+  return admin.database().ref(`data/users/${userId}/badges`).set(badges)
 }
 
 async function getUserBadges (userId) {

@@ -8,7 +8,7 @@ const mockTokenRequest = () => {
     .reply(200, JSON.stringify(mockToken()))
 }
 
-const mockBadgeClassesRequest = (accessToken = mockToken().access_token) => {
+const mockBadgeClassesRequest = (accessToken = mockToken()) => {
   nock('https://api.badgr.io/v2/', {
     reqheaders: {
       Authorization: `Bearer ${accessToken}`
@@ -18,7 +18,7 @@ const mockBadgeClassesRequest = (accessToken = mockToken().access_token) => {
     .reply(200, JSON.stringify(mockBadgeClasses()))
 }
 
-const mockBadgeClassesAssertsRequest = (badgeId, accessToken = mockToken().access_token) => {
+const mockBadgeClassesAssertsRequest = (badgeId, accessToken = mockToken()) => {
   nock('https://api.badgr.io/v2/', {
     reqheaders: {
       Authorization: `Bearer ${accessToken}`
