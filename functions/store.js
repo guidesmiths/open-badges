@@ -1,9 +1,6 @@
 const functions = require('firebase-functions')
 const admin = require('firebase-admin')
 
-admin.initializeApp(functions.config().firebase)
-const tokenRef = 'secrets/badgr'
-
 function badgesListTransformation (list) {
   const badges = {}
   list.forEach(badge => {
@@ -11,6 +8,9 @@ function badgesListTransformation (list) {
   })
   return badges
 }
+
+admin.initializeApp(functions.config().firebase)
+const tokenRef = 'secrets/badgr'
 
 async function setToken (data) {
   if (!data || !data.access_token) throw (new Error('No token provided!'))
