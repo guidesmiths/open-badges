@@ -10,7 +10,7 @@ function notify (text) {
     uri: functions.config().slack.webhook_url,
     body: {
       text,
-      link_names: 1
+      link_names: true
     },
     json: true
   })

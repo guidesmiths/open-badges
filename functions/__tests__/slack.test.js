@@ -5,7 +5,7 @@ describe('Should notify slack', () => {
   test('Should notify slack through http request', () => {
     const body = {
       text: 'This is just a sample text',
-      link_names: 1
+      link_names: true
     }
 
     nock('https://hooks.slack.com/services/ID1/ID2/ID3')
