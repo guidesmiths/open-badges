@@ -1,5 +1,5 @@
 const functions = require('firebase-functions')
-const { setToken } = require('./store')
+const { setToken, getUserData } = require('./store')
 const { generateToken, getBadgesList } = require('./badgr')
 const { badgesDigestor } = require('./utils/index')
 const { notify } = require('./slack')
@@ -26,15 +26,19 @@ exports.hourlyCrontab = functions.region('us-central1').pubsub.schedule('0 * * *
   }
 })
 
-exports.BadgeNotifier = functions.database.ref('data/users/{userId}/badges/{badgeId}').onWrite((change, context) => {
+exports.BadgeNotifier = functions.database.ref('data/users/{userId}/badges/{badgeId}').onWrite(async (change, context) => {
   const userId = context.params.userId
   const badgeId = context.params.badgeId
   const badgeContent = change.after.val()
+  const userData = await getUserData(userId)
 
-  const message = JSON.stringify({ userId, badgeId, badgeContent })
+  if (!userData || !userData.slackUser) throw new Error(`user: ${userId} is not registered in the database.`)
 
-  console.log('Retrieved message content: ', message)
-  const slackMsg = `User: (${userId}) has archived *${badgeContent.name} (${badgeId})* :muscle:.${badgeContent.description}\n.\n${badgeContent.image}`
+  const message = JSON.stringify({ userId, badgeId, userData, badgeContent })
+  console.log('[Notification] Information available:', message)
+
+  const slackMsg = `<${userData.slackUser}> just received *${badgeContent.name} badge*\n_${badgeContent.description}._\n<${badgeContent.image}>`
+
   notify(slackMsg)
-  console.log(slackMsg)
+  console.log('[Notification] Notification sent:', slackMsg)
 })

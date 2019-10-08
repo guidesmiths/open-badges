@@ -24,6 +24,11 @@ async function getToken () {
   return data
 }
 
+async function getUserData (userId) {
+  const snapshot = await admin.database().ref('data/users').orderByChild('uuid').equalTo(userId).once('child_added')
+  return snapshot.val()
+}
+
 async function saveAllBadges (list) {
   if (!Array.isArray(list)) throw (new Error('No list provided!'))
 
@@ -56,5 +61,5 @@ async function getUserBadges (userId) {
 }
 
 module.exports = {
-  getToken, setToken, saveAllBadges, getAllBadges, saveUserBadges, getUserBadges
+  getToken, setToken, saveAllBadges, getAllBadges, saveUserBadges, getUserBadges, getUserData
 }
