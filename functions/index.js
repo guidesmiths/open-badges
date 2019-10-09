@@ -26,7 +26,7 @@ exports.hourlyCrontab = functions.region('us-central1').pubsub.schedule('0 * * *
   }
 })
 
-exports.BadgeNotifier = functions.database.ref('data/users/{userId}/badges/{badgeId}').onWrite(async (change, context) => {
+exports.userAwardedBadgeNotifier = functions.database.ref('data/users/{userId}/badges/{badgeId}').onWrite(async (change, context) => {
   const userId = context.params.userId
   const badgeId = context.params.badgeId
   const badgeContent = change.after.val()
@@ -35,10 +35,22 @@ exports.BadgeNotifier = functions.database.ref('data/users/{userId}/badges/{badg
   if (!userData || !userData.slackUser) throw new Error(`user: ${userId} is not registered in the database.`)
 
   const message = JSON.stringify({ userId, badgeId, userData, badgeContent })
-  console.log('[Notification] Information available:', message)
+  console.log('[userAwardedBadgeNotifier] Information available:', message)
 
   const slackMsg = `<${userData.slackUser}> just received *${badgeContent.name} badge*\n_${badgeContent.description}._\n<${badgeContent.image}>`
 
   notify(slackMsg)
-  console.log('[Notification] Notification sent:', slackMsg)
+  console.log('[userAwardedBadgeNotifier] Notification sent:', slackMsg)
+})
+
+exports.newBadgeAddedNotifier = functions.database.ref('data/badgr/badges/{badgeId}').onWrite(async (change, context) => {
+  const badgeId = context.params.badgeId
+  const badgeContent = change.after.val()
+
+  const message = JSON.stringify({ badgeId, badgeContent })
+  console.log('[newBadgeAddedNotifier] Information available:', message)
+
+  const slackMsg = `<!channel> *${badgeContent.name} badge* was added to the catalog\n_${badgeContent.description}._\nYou can request it if you have what it takes!\n<${badgeContent.openBadgeId}>`
+  notify(slackMsg)
+  console.log('[newBadgeAddedNotifier] Notification sent:', slackMsg)
 })
