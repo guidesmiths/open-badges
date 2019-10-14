@@ -37,17 +37,17 @@ exports.userAwardedBadgeNotifier = functions.database.ref('data/users/{userId}/b
   const message = JSON.stringify({ userId, badgeId, userData, badgeContent })
   console.log('[userAwardedBadgeNotifier] Information available:', message)
 
-  const slackMsg = `<${userData.slackUser}> just received *${badgeContent.name} badge*\n_${badgeContent.description}._\n<${badgeContent.image}>`
+  const slackMsg = `:tada: <${userData.slackUser}> just received *${badgeContent.name} badge* :tada:\n_${badgeContent.description}._\n<${badgeContent.image}>`
   if (features.notifyUsersEnabled) {
     notify(slackMsg)
     console.log('[userAwardedBadgeNotifier] Notification sent:', slackMsg)
   } else {
-    console.log('[userAwardedBadgeNotifier] Notification NOT sent due feature flag config')
+    console.log('[userAwardedBadgeNotifier] Notification NOT sent due feature flag configuration')
   }
 })
 
 exports.newBadgeAddedNotifier = functions.database.ref('data/badgr/badges/{badgeId}').onWrite(async (change, context) => {
-  const { badgeId }  = context.params
+  const { badgeId } = context.params
   const badgeContent = change.after.val()
 
   const message = JSON.stringify({ badgeId, badgeContent })
@@ -58,6 +58,6 @@ exports.newBadgeAddedNotifier = functions.database.ref('data/badgr/badges/{badge
     notify(slackMsg)
     console.log('[newBadgeAddedNotifier] Notification sent:', slackMsg)
   } else {
-    console.log('[newBadgeAddedNotifier] Notification NOT sent due feature flag config')
+    console.log('[newBadgeAddedNotifier] Notification NOT sent due feature flag configuration')
   }
 })
