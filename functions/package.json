@@ -1,0 +1,45 @@
+{
+  "name": "Badges",
+  "description": "Open Badges for Guidesmiths",
+  "version": "0.1.0",
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "test": "jest  --verbose",
+    "test:coverage": "jest --verbose  --coverage",
+    "test:watch": "jest --verbose  --watchAll",
+    "lint": "standard",
+    "lint:fix": "standard --fix"
+  },
+  "engines": {
+    "node": "8"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "dependencies": {
+    "email-validator": "^2.0.4",
+    "firebase-admin": "^8.0.0",
+    "firebase-functions": "^3.1.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.1.6",
+    "jest": "^24.9.0",
+    "nock": "^11.3.5",
+    "standard": "^14.3.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run test"
+    }
+  },
+  "private": true
+}

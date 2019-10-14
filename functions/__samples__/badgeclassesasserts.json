@@ -1,0 +1,112 @@
+{
+    "status": {
+        "description": "ok",
+        "success": true
+    },
+    "result": [
+        {
+            "entityType": "Assertion",
+            "entityId": "2lkDfkhbRN-vb9OR1obVag",
+            "openBadgeId": "https://api.badgr.io/public/assertions/2lkDfkhbRN-vb9OR1obVag",
+            "createdAt": "2019-09-25T07:51:06Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "badgeclass": "EHLRWpv2TW6_6h7zDLrUiA",
+            "badgeclassOpenBadgeId": "https://api.badgr.io/public/badges/EHLRWpv2TW6_6h7zDLrUiA",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "image": "https://media.badgr.io/uploads/badges/assertion-2lkDfkhbRN-vb9OR1obVag.png",
+            "recipient": {
+                "identity": "sha256$d949e72bd38a900138b991e46b762ee29939e1a090a1322ef834a1bcb35a4b51",
+                "hashed": true,
+                "type": "email",
+                "plaintextIdentity": "joseantonio.dorado@guidesmiths.com",
+                "salt": "37fb14ee761041748aea05be46a1c2ce"
+            },
+            "issuedOn": "2019-09-25T07:51:05.503267Z",
+            "narrative": null,
+            "evidence": [],
+            "revoked": false,
+            "revocationReason": null,
+            "expires": null,
+            "extensions": {}
+        },
+        {
+            "entityType": "Assertion",
+            "entityId": "4O1KeeJLR_ehZyqdCY17Ig",
+            "openBadgeId": "https://api.badgr.io/public/assertions/4O1KeeJLR_ehZyqdCY17Ig",
+            "createdAt": "2019-09-25T07:51:06Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "badgeclass": "EHLRWpv2TW6_6h7zDLrUiA",
+            "badgeclassOpenBadgeId": "https://api.badgr.io/public/badges/EHLRWpv2TW6_6h7zDLrUiA",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "image": "https://media.badgr.io/uploads/badges/assertion-4O1KeeJLR_ehZyqdCY17Ig.png",
+            "recipient": {
+                "identity": "sha256$8b570299ef619239e89ff208ebf081671c53faebcdc95c066f10d43daa22ba18",
+                "hashed": true,
+                "type": "email",
+                "plaintextIdentity": "matteo.dipaolantonio@guidesmiths.com",
+                "salt": "a79bdf95a83d40fda0e2bd55e545e2f6"
+            },
+            "issuedOn": "2019-09-25T07:51:06.062579Z",
+            "narrative": null,
+            "evidence": [],
+            "revoked": false,
+            "revocationReason": null,
+            "expires": null,
+            "extensions": {}
+        },
+        {
+            "entityType": "Assertion",
+            "entityId": "ZCSNP6cKQDOdTC1JslAkMQ",
+            "openBadgeId": "https://api.badgr.io/public/assertions/ZCSNP6cKQDOdTC1JslAkMQ",
+            "createdAt": "2019-09-25T07:51:07Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "badgeclass": "EHLRWpv2TW6_6h7zDLrUiA",
+            "badgeclassOpenBadgeId": "https://api.badgr.io/public/badges/EHLRWpv2TW6_6h7zDLrUiA",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "image": "https://media.badgr.io/uploads/badges/assertion-ZCSNP6cKQDOdTC1JslAkMQ.png",
+            "recipient": {
+                "identity": "sha256$57e90d133d4a12b33a43204f2a3c2792bf88d10b80c13a652b6c1dcbc6aaf4c0",
+                "hashed": true,
+                "type": "email",
+                "plaintextIdentity": "carlos.jimenez@guidesmiths.com",
+                "salt": "83ed7240ea7c4384b49bc7411798a607"
+            },
+            "issuedOn": "2019-09-25T07:51:06.602372Z",
+            "narrative": null,
+            "evidence": [],
+            "revoked": false,
+            "revocationReason": null,
+            "expires": null,
+            "extensions": {}
+        },
+        {
+            "entityType": "Assertion",
+            "entityId": "co-8xMqoS1WjjqYdysfamA",
+            "openBadgeId": "https://api.badgr.io/public/assertions/co-8xMqoS1WjjqYdysfamA",
+            "createdAt": "2019-09-25T07:51:07Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "badgeclass": "EHLRWpv2TW6_6h7zDLrUiA",
+            "badgeclassOpenBadgeId": "https://api.badgr.io/public/badges/EHLRWpv2TW6_6h7zDLrUiA",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "image": "https://media.badgr.io/uploads/badges/assertion-co-8xMqoS1WjjqYdysfamA.png",
+            "recipient": {
+                "identity": "sha256$0174cd11308cf36264281af1122cba67817830be14ca939138444191020bc278",
+                "hashed": true,
+                "type": "email",
+                "plaintextIdentity": "ulises.gascon@guidesmiths.com",
+                "salt": "7d605e08d2a04ed09fae1e370b37a967"
+            },
+            "issuedOn": "2019-09-25T07:51:07.170971Z",
+            "narrative": null,
+            "evidence": [],
+            "revoked": false,
+            "revocationReason": null,
+            "expires": null,
+            "extensions": {}
+        }
+    ]
+}
