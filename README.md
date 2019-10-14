@@ -138,4 +138,12 @@ You can start the tests by running `npm run test` in the terminal. The tests are
 
 - `$ npm install -g firebase-tools`
 - `$ firebase init` _(optional)_
+- Review/Enter enviroNmental variables needed for the project
+
+```text
+firebase functions:config:set slack.webhook_url="https://hooks.slack.com/services/-----1-----/----2-----/------3-----"
+firebase functions:config:set badgr.user="----EMAIL-----@guidesmiths.com"
+firebase functions:config:set badgr.pass="-------PASS-------"
+```
+
 - `$ firebase deploy`
