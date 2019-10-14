@@ -28,8 +28,7 @@ exports.hourlyCrontab = functions.region('us-central1').pubsub.schedule('0 * * *
 })
 
 exports.userAwardedBadgeNotifier = functions.database.ref('data/users/{userId}/badges/{badgeId}').onWrite(async (change, context) => {
-  const userId = context.params.userId
-  const badgeId = context.params.badgeId
+  const { userId, badgeId } = context.params
   const badgeContent = change.after.val()
   const userData = await getUserData(userId)
 
@@ -48,7 +47,7 @@ exports.userAwardedBadgeNotifier = functions.database.ref('data/users/{userId}/b
 })
 
 exports.newBadgeAddedNotifier = functions.database.ref('data/badgr/badges/{badgeId}').onWrite(async (change, context) => {
-  const badgeId = context.params.badgeId
+  const { badgeId }  = context.params
   const badgeContent = change.after.val()
 
   const message = JSON.stringify({ badgeId, badgeContent })
