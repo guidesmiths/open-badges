@@ -1,0 +1,953 @@
+{
+    "status": {
+        "description": "ok",
+        "success": true
+    },
+    "result": [
+        {
+            "entityType": "BadgeClass",
+            "entityId": "EHLRWpv2TW6_6h7zDLrUiA",
+            "openBadgeId": "https://api.badgr.io/public/badges/EHLRWpv2TW6_6h7zDLrUiA",
+            "createdAt": "2019-09-09T14:20:12Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "GuideSmiths Member!",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_bd775ff3-2dba-49d1-a14b-9920f013b760.png",
+            "description": "This person is employed by GuideSmiths",
+            "criteriaUrl": "https://guidesmiths.com",
+            "criteriaNarrative": "This person is employed by GuideSmiths",
+            "alignments": [],
+            "tags": [
+                "employee",
+                "membership",
+                "culture"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "L9juXFtSSAKojpqL1NZhCA",
+            "openBadgeId": "https://api.badgr.io/public/badges/L9juXFtSSAKojpqL1NZhCA",
+            "createdAt": "2019-09-16T15:05:17Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "Global Offset Budapest 2019",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_aae9e347-3f89-4716-8b42-ed5efa26a1f0.png",
+            "description": "You have been part of the Global Offset in Budapest'19",
+            "criteriaUrl": "https://www.guidesmiths.com/",
+            "criteriaNarrative": "You have been part of the Global Offset in Budapest'19",
+            "alignments": [],
+            "tags": [
+                "offset",
+                "culture"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "CfdRlAdLR1mWU1BzHD7LAw",
+            "openBadgeId": "https://api.badgr.io/public/badges/CfdRlAdLR1mWU1BzHD7LAw",
+            "createdAt": "2019-09-16T15:13:24Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "Winner Hackathon (Budapest 2019)",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_779227cb-6928-41f9-bad7-fe35de64d7fb.png",
+            "description": "You have been part of the winner team in Budapest Hackathon'19",
+            "criteriaUrl": "https://www.guidesmiths.com/",
+            "criteriaNarrative": "You have been part of the winner team in Budapest Hackathon'19",
+            "alignments": [],
+            "tags": [
+                "hackathon",
+                "culture"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "DnAKNyjzTU-tAkraJWwq8w",
+            "openBadgeId": "https://api.badgr.io/public/badges/DnAKNyjzTU-tAkraJWwq8w",
+            "createdAt": "2019-09-16T15:52:45Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "KS Partner",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_41c2cb03-40c2-46cc-acc1-da9bf8e52029.png",
+            "description": "You give at least your first Knowledge sharing session",
+            "criteriaUrl": "https://www.guidesmiths.com/",
+            "criteriaNarrative": "You give at least your first Knowledge sharing session",
+            "alignments": [],
+            "tags": [
+                "ks",
+                "culture",
+                "partner"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "CQ47lFULR3WubxjzI-3WCg",
+            "openBadgeId": "https://api.badgr.io/public/badges/CQ47lFULR3WubxjzI-3WCg",
+            "createdAt": "2019-09-16T15:57:46Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "security",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_92092377-53b7-44b4-a286-bca68a2b7cd7.png",
+            "description": "Finish a course about Security",
+            "criteriaUrl": null,
+            "criteriaNarrative": "You are helping to make a better world!",
+            "alignments": [],
+            "tags": [
+                "security"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "hhESCBMSQSOEC7nmTlNLKg",
+            "openBadgeId": "https://api.badgr.io/public/badges/hhESCBMSQSOEC7nmTlNLKg",
+            "createdAt": "2019-09-16T15:59:51Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "Good Member",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_2f3a7f87-ef67-4a45-b606-618c00a881b4.png",
+            "description": "You are doing an awesome work to keep our place cool, safe and productive ^^",
+            "criteriaUrl": null,
+            "criteriaNarrative": "You are doing an awesome work to keep our place cool, safe and productive ^^",
+            "alignments": [],
+            "tags": [
+                "good",
+                "partner",
+                "culture"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "0bB5kY5GQbeAM5wETTWvEQ",
+            "openBadgeId": "https://api.badgr.io/public/badges/0bB5kY5GQbeAM5wETTWvEQ",
+            "createdAt": "2019-09-24T08:25:29Z",
+            "createdBy": "lggCaZPAQnSB_O9PPt5RSA",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "KS Contributor",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_f5c9bdfe-d29a-49d9-8c7f-00369d87ad11.png",
+            "description": "Give at least 10 Knowledge Sharing",
+            "criteriaUrl": null,
+            "criteriaNarrative": "Give at least 10 Knowledge Sharing",
+            "alignments": [],
+            "tags": [
+                "ks",
+                "contributor",
+                "cultural"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "lvz7OWM5RrmwoNYFJUloUQ",
+            "openBadgeId": "https://api.badgr.io/public/badges/lvz7OWM5RrmwoNYFJUloUQ",
+            "createdAt": "2019-09-24T15:52:19Z",
+            "createdBy": "lggCaZPAQnSB_O9PPt5RSA",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "Blog partner",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_ab0478ca-302b-4bda-b3a7-4ed3a11270ef.png",
+            "description": "Publish one post in Medium",
+            "criteriaUrl": null,
+            "criteriaNarrative": "Publish one post in Medium and send the link to an admin",
+            "alignments": [],
+            "tags": [
+                "culture",
+                "blog",
+                "partner"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "RFaLp7XhRNSxbgsymsmvoQ",
+            "openBadgeId": "https://api.badgr.io/public/badges/RFaLp7XhRNSxbgsymsmvoQ",
+            "createdAt": "2019-09-25T09:44:34Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "Badgr Master",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_e35eae65-b68f-49ef-9290-97bea967fd54.png",
+            "description": "Badgr master are the people leading this initiative in GS",
+            "criteriaUrl": "https://guidesmiths.com",
+            "criteriaNarrative": "Badgr master are the people leading this initiative in GS",
+            "alignments": [],
+            "tags": [
+                "culture",
+                "leader"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "KHcnKZSOQA6nkHybDBtCbA",
+            "openBadgeId": "https://api.badgr.io/public/badges/KHcnKZSOQA6nkHybDBtCbA",
+            "createdAt": "2019-09-25T11:25:04Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "Open source Partner",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_86628630-f22e-451e-b69b-ed842f44c66b.png",
+            "description": "Yo have at least contributed to an existing open source repo",
+            "criteriaUrl": null,
+            "criteriaNarrative": "Yo have at least contributed to an existing open source repo",
+            "alignments": [],
+            "tags": [
+                "culture",
+                "partner",
+                "open source"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "TgsUX0PMT6GQSxLeRAqEkA",
+            "openBadgeId": "https://api.badgr.io/public/badges/TgsUX0PMT6GQSxLeRAqEkA",
+            "createdAt": "2019-09-25T14:17:11Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "KS Master",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_17279335-1336-4c37-adc4-a71a0cded304.png",
+            "description": "Give at least 10 KS sessions",
+            "criteriaUrl": null,
+            "criteriaNarrative": "Give at least 10 KS sessions",
+            "alignments": [],
+            "tags": [
+                "ks",
+                "master",
+                "culture"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "xfJwq3olTsWSGn6HiJujYg",
+            "openBadgeId": "https://api.badgr.io/public/badges/xfJwq3olTsWSGn6HiJujYg",
+            "createdAt": "2019-09-25T14:19:45Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "blog contributor",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_187e71b7-953e-48c1-b36d-b9489f6acc87.png",
+            "description": "publish at least 5 articles to corporate Blog",
+            "criteriaUrl": null,
+            "criteriaNarrative": "publish at least 5 articles to corporate Blog",
+            "alignments": [],
+            "tags": [
+                "blog",
+                "contributor",
+                "culture"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "AKKUOE_3RiajYdPngOq-1g",
+            "openBadgeId": "https://api.badgr.io/public/badges/AKKUOE_3RiajYdPngOq-1g",
+            "createdAt": "2019-09-25T14:20:44Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "Good Karma",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_27df810d-96fc-4d0a-bd6a-d5cf422baf97.png",
+            "description": "Receive 100 karma points",
+            "criteriaUrl": null,
+            "criteriaNarrative": "Receive 100 karma points",
+            "alignments": [],
+            "tags": [
+                "culture",
+                "karma",
+                "partner"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "NyuHyuXyRHu4pQzdfpUvLg",
+            "openBadgeId": "https://api.badgr.io/public/badges/NyuHyuXyRHu4pQzdfpUvLg",
+            "createdAt": "2019-09-25T14:21:47Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "Amazing Karma",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_6325691d-d146-415c-aa99-d11664ab87d3.png",
+            "description": "Receive 500 karma points",
+            "criteriaUrl": null,
+            "criteriaNarrative": "Receive 500 karma points",
+            "alignments": [],
+            "tags": [
+                "culture",
+                "karma",
+                "contributor"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "XgVoDEHXRaOLnWha4zYNQA",
+            "openBadgeId": "https://api.badgr.io/public/badges/XgVoDEHXRaOLnWha4zYNQA",
+            "createdAt": "2019-09-25T14:22:36Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "Awesome karma!",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_cba56b2d-be68-4252-b899-0906dd576b91.png",
+            "description": "Receive 1000 karma points",
+            "criteriaUrl": null,
+            "criteriaNarrative": "Receive 1000 karma points",
+            "alignments": [],
+            "tags": [
+                "karma",
+                "master",
+                "culture"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "D1EUMwIBRauia-qgh8invA",
+            "openBadgeId": "https://api.badgr.io/public/badges/D1EUMwIBRauia-qgh8invA",
+            "createdAt": "2019-09-25T14:24:17Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "Open source Master",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_b4f5bad5-9720-44a0-876c-86094d3d4133.png",
+            "description": "Contribute to at least 20 existing open source repo",
+            "criteriaUrl": null,
+            "criteriaNarrative": "Contribute to at least 20 existing open source repo",
+            "alignments": [],
+            "tags": [
+                "culture",
+                "open source",
+                "master"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "I93IalL3RiCL7lxIGteq_w",
+            "openBadgeId": "https://api.badgr.io/public/badges/I93IalL3RiCL7lxIGteq_w",
+            "createdAt": "2019-09-25T14:27:42Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "Evangelist Partner",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_68c378bb-0e55-4415-a90b-00e78f87266f.png",
+            "description": "Give one talk in a Meetup or conference",
+            "criteriaUrl": null,
+            "criteriaNarrative": "Give one talk in a Meetup or conference",
+            "alignments": [],
+            "tags": [
+                "culture",
+                "talks",
+                "evangelization",
+                "partner"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "SC4xiQDSSPy_POV8nkN4gw",
+            "openBadgeId": "https://api.badgr.io/public/badges/SC4xiQDSSPy_POV8nkN4gw",
+            "createdAt": "2019-09-25T14:29:49Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "Evangelist Contributor",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_ef24ca10-134e-4239-ba63-47e25c9d33f6.png",
+            "description": "Give at least 10 talks in Meetups or conferences",
+            "criteriaUrl": null,
+            "criteriaNarrative": "Give at least 10 talks in Meetups or conferences",
+            "alignments": [],
+            "tags": [
+                "culture",
+                "talks",
+                "evangelization",
+                "contributor"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "nLEc1nRsRkmnCJwjACszwg",
+            "openBadgeId": "https://api.badgr.io/public/badges/nLEc1nRsRkmnCJwjACszwg",
+            "createdAt": "2019-09-25T14:30:11Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "Evangelist Master",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_3f879f4c-00bc-4a71-96b2-d2a6745ffba9.png",
+            "description": "Give at least 25 talks in Meetups or conferences",
+            "criteriaUrl": null,
+            "criteriaNarrative": "Give at least 25 talks in Meetups or conferences",
+            "alignments": [],
+            "tags": [
+                "master",
+                "culture",
+                "evangelization",
+                "talks"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "jnhqricRTuWL2eBFyOChtw",
+            "openBadgeId": "https://api.badgr.io/public/badges/jnhqricRTuWL2eBFyOChtw",
+            "createdAt": "2019-09-25T14:32:45Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "Training master",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_ea9c5ca0-9d98-4493-a681-798e55b22b52.png",
+            "description": "Give 10 internal courses",
+            "criteriaUrl": null,
+            "criteriaNarrative": "Give 10 internal courses",
+            "alignments": [],
+            "tags": [
+                "master",
+                "training",
+                "soft skills"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "VASkW1ByQ7KGonruRrlDyg",
+            "openBadgeId": "https://api.badgr.io/public/badges/VASkW1ByQ7KGonruRrlDyg",
+            "createdAt": "2019-09-25T14:32:46Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "Training contributor",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_252e377f-9cd3-4a57-821c-4a619671528c.png",
+            "description": "Give 5 internal courses",
+            "criteriaUrl": null,
+            "criteriaNarrative": "Give 5 internal courses",
+            "alignments": [],
+            "tags": [
+                "training",
+                "soft skills",
+                "contributor"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "rCEl05_9TkadWphC3X7log",
+            "openBadgeId": "https://api.badgr.io/public/badges/rCEl05_9TkadWphC3X7log",
+            "createdAt": "2019-09-25T14:32:50Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "Training partner",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_52212590-5f81-42ae-b17f-26fa77812ebf.png",
+            "description": "Give an internal course",
+            "criteriaUrl": null,
+            "criteriaNarrative": "Give an internal course",
+            "alignments": [],
+            "tags": [
+                "training",
+                "soft skills",
+                "partner"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "g4Wb33qsTYGWDem4WHBdhA",
+            "openBadgeId": "https://api.badgr.io/public/badges/g4Wb33qsTYGWDem4WHBdhA",
+            "createdAt": "2019-09-25T14:34:43Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "Mentorship partner",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_bf6c3585-86e1-4fa2-8bfc-c4c69c19a79b.png",
+            "description": "To be a buddy for a newcomer",
+            "criteriaUrl": null,
+            "criteriaNarrative": "To be a buddy for a newcomer",
+            "alignments": [],
+            "tags": [
+                "mentorship",
+                "partner",
+                "soft skills"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "qCp9iw6ZSfuZsB8Lr0zPdw",
+            "openBadgeId": "https://api.badgr.io/public/badges/qCp9iw6ZSfuZsB8Lr0zPdw",
+            "createdAt": "2019-09-25T14:34:57Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "Mentorship contributor",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_3a194154-6b03-4e2f-9df5-b4d3bfe4a903.png",
+            "description": "To be a buddy for 5 newcomers",
+            "criteriaUrl": null,
+            "criteriaNarrative": "To be a buddy for 5 newcomers",
+            "alignments": [],
+            "tags": [
+                "mentorship",
+                "soft skills",
+                "contributor"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "ef2icmY1QFqyJlpW-IKLzQ",
+            "openBadgeId": "https://api.badgr.io/public/badges/ef2icmY1QFqyJlpW-IKLzQ",
+            "createdAt": "2019-09-25T14:35:10Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "Mentorship master",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_bced5bc4-8f60-4982-b6ec-8c78288f7144.png",
+            "description": "To be a buddy for 10 newcomers",
+            "criteriaUrl": null,
+            "criteriaNarrative": "To be a buddy for 10 newcomers",
+            "alignments": [],
+            "tags": [
+                "mentorship",
+                "soft skills",
+                "master"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "gFrlQykTR_GAFhZ1KsWWWA",
+            "openBadgeId": "https://api.badgr.io/public/badges/gFrlQykTR_GAFhZ1KsWWWA",
+            "createdAt": "2019-09-25T14:36:13Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "Initiative leader",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_63b987d3-15a7-4868-8b3a-1671c1ac7825.png",
+            "description": "Lead a Ministry",
+            "criteriaUrl": null,
+            "criteriaNarrative": "Lead a Ministry",
+            "alignments": [],
+            "tags": [
+                "ministery",
+                "leader",
+                "soft skills",
+                "initiative"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "UYsPjbiQQv-PNQutXRWEEQ",
+            "openBadgeId": "https://api.badgr.io/public/badges/UYsPjbiQQv-PNQutXRWEEQ",
+            "createdAt": "2019-09-25T14:38:27Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "Frontend Content Creator",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_09754923-d8ae-4e60-a34b-efc79d3aad02.png",
+            "description": "Create content like a post or course about frontend skills",
+            "criteriaUrl": null,
+            "criteriaNarrative": "Create content like a post or course about frontend skills",
+            "alignments": [],
+            "tags": [
+                "partner",
+                "content",
+                "frontend"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "xrT2KUtlTo2izUeWH1tsZg",
+            "openBadgeId": "https://api.badgr.io/public/badges/xrT2KUtlTo2izUeWH1tsZg",
+            "createdAt": "2019-09-25T14:38:34Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "Backend Content Creator",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_527b04bd-3b67-4a6d-8793-333ece4c6b57.png",
+            "description": "Create content like a post or course about backend skills",
+            "criteriaUrl": null,
+            "criteriaNarrative": "Create content like a post or course about backend skills",
+            "alignments": [],
+            "tags": [
+                "partner",
+                "content",
+                "backend"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "leaCmNRWRjGP6bCwy4ZrcA",
+            "openBadgeId": "https://api.badgr.io/public/badges/leaCmNRWRjGP6bCwy4ZrcA",
+            "createdAt": "2019-09-25T14:38:45Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "DevOps Content Creator",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_256207f2-af24-48ed-ac2d-1ace408a535f.png",
+            "description": "Create content like a post or course about DevOps skills",
+            "criteriaUrl": null,
+            "criteriaNarrative": "Create content like a post or course about DevOps skills",
+            "alignments": [],
+            "tags": [
+                "partner",
+                "content",
+                "devops"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "FB20xX0gQQurClfk2eB2eg",
+            "openBadgeId": "https://api.badgr.io/public/badges/FB20xX0gQQurClfk2eB2eg",
+            "createdAt": "2019-09-25T14:40:56Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "DevOps Collaborator",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_48687c43-ee33-4d14-94fa-d33ddae33409.png",
+            "description": "create an issue or resolve a bug in an official github repository",
+            "criteriaUrl": null,
+            "criteriaNarrative": "create an issue or resolve a bug in an official github repository",
+            "alignments": [],
+            "tags": [
+                "devops",
+                "collaborator",
+                "partner"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "nnLZIA4DRVyFjd2RwJ9vVg",
+            "openBadgeId": "https://api.badgr.io/public/badges/nnLZIA4DRVyFjd2RwJ9vVg",
+            "createdAt": "2019-09-25T14:40:57Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "Backend Collaborator",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_d7e96a5f-32a6-4c4e-8186-f6c36f79089d.png",
+            "description": "create an issue or resolve a bug in an official github repository",
+            "criteriaUrl": null,
+            "criteriaNarrative": "create an issue or resolve a bug in an official github repository",
+            "alignments": [],
+            "tags": [
+                "backend",
+                "collaborator",
+                "partner"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "l7Z8HT4jQvC-MOD9PWZk3Q",
+            "openBadgeId": "https://api.badgr.io/public/badges/l7Z8HT4jQvC-MOD9PWZk3Q",
+            "createdAt": "2019-09-25T14:41:19Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "Frontend Collaborator",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_5bc7910b-d07a-42c3-8266-37d0cb727f51.png",
+            "description": "create an issue or resolve a bug in an official github repository",
+            "criteriaUrl": null,
+            "criteriaNarrative": "create an issue or resolve a bug in an official github repository",
+            "alignments": [],
+            "tags": [
+                "front",
+                "collaborator",
+                "partner"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "C8sWvYavTSyMDP_HIevc2g",
+            "openBadgeId": "https://api.badgr.io/public/badges/C8sWvYavTSyMDP_HIevc2g",
+            "createdAt": "2019-09-25T14:44:51Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "DevOps Content Creato",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_29bbb318-8344-40e3-af74-d5be98fb6e6a.png",
+            "description": "Create content like a post or course about DevOps skills",
+            "criteriaUrl": null,
+            "criteriaNarrative": "Create content like a post or course about DevOps skills",
+            "alignments": [],
+            "tags": [
+                "devops",
+                "partner"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "uSZ3bxb3RsC1sHsOwGJdNw",
+            "openBadgeId": "https://api.badgr.io/public/badges/uSZ3bxb3RsC1sHsOwGJdNw",
+            "createdAt": "2019-09-25T14:44:52Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "Backend expert",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_e96c879e-7d7e-49e0-9929-45cf853eff06.png",
+            "description": "Resolve 10 doubts in stackoverflow about Node",
+            "criteriaUrl": null,
+            "criteriaNarrative": "Resolve 10 doubts in stackoverflow about Node",
+            "alignments": [],
+            "tags": [
+                "backend",
+                "partner"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "vrCoKwnlSriwP5xFhH550Q",
+            "openBadgeId": "https://api.badgr.io/public/badges/vrCoKwnlSriwP5xFhH550Q",
+            "createdAt": "2019-09-25T14:44:56Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "Frontend expert",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_fbdd8664-5b29-4f94-b626-5ef324780472.png",
+            "description": "Resolve 10 doubts in stackoverflow about React",
+            "criteriaUrl": null,
+            "criteriaNarrative": "Resolve 10 doubts in stackoverflow about React",
+            "alignments": [],
+            "tags": [
+                "front",
+                "partner"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "lgFcEzY7RyCTCtfyu2aEpw",
+            "openBadgeId": "https://api.badgr.io/public/badges/lgFcEzY7RyCTCtfyu2aEpw",
+            "createdAt": "2019-09-25T14:50:35Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "AWS",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_bfe273c6-0d87-4980-8f8c-aa9e9d143530.png",
+            "description": "Finish a course about AWS",
+            "criteriaUrl": null,
+            "criteriaNarrative": "Finish a course about AWS",
+            "alignments": [],
+            "tags": [
+                "devops",
+                "aws",
+                "partner"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "Ode8MahIQySsbtxpUHfg1g",
+            "openBadgeId": "https://api.badgr.io/public/badges/Ode8MahIQySsbtxpUHfg1g",
+            "createdAt": "2019-09-25T14:51:03Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "Azure",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_501f3d2b-8934-4dc6-a85a-57d3eedcab5c.png",
+            "description": "Finish a course about Azure",
+            "criteriaUrl": null,
+            "criteriaNarrative": "Finish a course about Azure",
+            "alignments": [],
+            "tags": [
+                "azure",
+                "partner",
+                "devops"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        },
+        {
+            "entityType": "BadgeClass",
+            "entityId": "7j054TQESrGRJR1nt5coGQ",
+            "openBadgeId": "https://api.badgr.io/public/badges/7j054TQESrGRJR1nt5coGQ",
+            "createdAt": "2019-09-25T14:51:34Z",
+            "createdBy": "mAtisF97RKyJkoBPNMRCcQ",
+            "issuer": "ltDx80nBQoOHgNwT0FLfWg",
+            "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ltDx80nBQoOHgNwT0FLfWg",
+            "name": "Node",
+            "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_237a8da0-e606-466c-a15f-da9eaae44729.png",
+            "description": "Finish a course about Node",
+            "criteriaUrl": null,
+            "criteriaNarrative": "Finish a course about Node",
+            "alignments": [],
+            "tags": [
+                "node",
+                "backend"
+            ],
+            "expires": {
+                "amount": null,
+                "duration": null
+            },
+            "extensions": {}
+        }
+    ]
+}
