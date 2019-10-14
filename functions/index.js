@@ -3,6 +3,7 @@ const { setToken, getUserData } = require('./store')
 const { generateToken, getBadgesList } = require('./badgr')
 const { badgesDigestor } = require('./utils/index')
 const { notify } = require('./slack')
+const { features } = require('./config')
 
 exports.dailyCrontab = functions.region('us-central1').pubsub.schedule('* 6 * * *').onRun(async (context) => {
   console.log('[TOKEN] Refresh has started')
@@ -38,9 +39,12 @@ exports.userAwardedBadgeNotifier = functions.database.ref('data/users/{userId}/b
   console.log('[userAwardedBadgeNotifier] Information available:', message)
 
   const slackMsg = `<${userData.slackUser}> just received *${badgeContent.name} badge*\n_${badgeContent.description}._\n<${badgeContent.image}>`
-
-  notify(slackMsg)
-  console.log('[userAwardedBadgeNotifier] Notification sent:', slackMsg)
+  if (features.notifyUsersEnabled) {
+    notify(slackMsg)
+    console.log('[userAwardedBadgeNotifier] Notification sent:', slackMsg)
+  } else {
+    console.log('[userAwardedBadgeNotifier] Notification NOT sent due feature flag config')
+  }
 })
 
 exports.newBadgeAddedNotifier = functions.database.ref('data/badgr/badges/{badgeId}').onWrite(async (change, context) => {
@@ -51,6 +55,10 @@ exports.newBadgeAddedNotifier = functions.database.ref('data/badgr/badges/{badge
   console.log('[newBadgeAddedNotifier] Information available:', message)
 
   const slackMsg = `<!channel> *${badgeContent.name} badge* was added to the catalog\n_${badgeContent.description}._\nYou can request it if you have what it takes!\n<${badgeContent.openBadgeId}>`
-  notify(slackMsg)
-  console.log('[newBadgeAddedNotifier] Notification sent:', slackMsg)
+  if (features.NotifyCreationEnabled) {
+    notify(slackMsg)
+    console.log('[newBadgeAddedNotifier] Notification sent:', slackMsg)
+  } else {
+    console.log('[newBadgeAddedNotifier] Notification NOT sent due feature flag config')
+  }
 })
