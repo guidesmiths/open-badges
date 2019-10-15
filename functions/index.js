@@ -27,9 +27,9 @@ exports.hourlyCrontab = functions.region('us-central1').pubsub.schedule('0 * * *
   }
 })
 
-exports.userAwardedBadgeNotifier = functions.database.ref('data/users/{userId}/badges/{badgeId}').onWrite(async (change, context) => {
+exports.userAwardedBadgeNotifier = functions.database.ref('data/users/{userId}/badges/{badgeId}').onCreate(async (snapshot, context) => {
   const { userId, badgeId } = context.params
-  const badgeContent = change.after.val()
+  const badgeContent = snapshot.val()
   const userData = await getUserData(userId)
 
   if (!userData || !userData.slackUser) throw new Error(`user: ${userId} is not registered in the database.`)
@@ -46,9 +46,9 @@ exports.userAwardedBadgeNotifier = functions.database.ref('data/users/{userId}/b
   }
 })
 
-exports.newBadgeAddedNotifier = functions.database.ref('data/badgr/badges/{badgeId}').onWrite(async (change, context) => {
+exports.newBadgeAddedNotifier = functions.database.ref('data/badgr/badges/{badgeId}').onCreate(async (snapshot, context) => {
   const { badgeId } = context.params
-  const badgeContent = change.after.val()
+  const badgeContent = snapshot.val()
 
   const message = JSON.stringify({ badgeId, badgeContent })
   console.log('[newBadgeAddedNotifier] Information available:', message)
