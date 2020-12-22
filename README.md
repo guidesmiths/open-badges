@@ -150,3 +150,24 @@ firebase functions:config:set badgr.pass="-------PASS-------"
 ```
 
 - `$ firebase deploy`
+
+## Utils
+
+### How to hash an email?
+
+This is useful in case that you want to add new users. We use md5 to generate unique user ids in a normalize way (Firebase compatibility).
+
+Input in terminal:
+
+```bash
+node scripts/generate_hash.js jane.doe@demo.com
+```
+
+Output in terminal:
+
+```
+------ MD5 HASH -----
+input: jane.doe@demo.com
+output: 6ceb94b82307ccfaa79644bf2aa4a9cc
+---------------------
+```
