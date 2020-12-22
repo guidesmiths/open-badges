@@ -1,6 +1,6 @@
 # Open Badges!
 
-This firebase project can help to notify Slack about changes in your [Badgr.io issuer]()
+This firebase project can help to notify Slack about changes in your [Badgr.io issuer](https://api.badgr.io/docs/v2/)
 
 Main features:
 
