@@ -1,5 +1,19 @@
 # Open Badges!
 
+This firebase project can help to notify Slack about changes in your [Badgr.io issuer]()
+
+Main features:
+
+- Keep a record in Realtime Database for all the badges
+- Send slack notifications in public channels when a new badge is created
+- Send slack notifications when a badge has been granted to an user (including mention)
+- Generates all the tokens needed for authentication against the Badgr API.
+
+### Cool notifications in Slack
+
+![Slack screenshot](other/screen.png)
+
+
 ## Current Architecture
 
 ![](https://user-images.githubusercontent.com/5110813/82293346-b5199a00-99ac-11ea-907c-e92833159dfe.png)
