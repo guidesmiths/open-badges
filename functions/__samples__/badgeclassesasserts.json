@@ -1,0 +1,140 @@
+{
+    "status": {
+        "description": "ok",
+        "success": true
+    },
+    "result": [
+        {
+           "entityType": "BadgeClass",
+           "entityId": "1890c081-12eb-4e16-b46a-a6db4e611b92",
+           "openBadgeId": "https://api.badgr.io/public/badges/1890c081-12eb-4e16-b46a-a6db4e611b92",
+           "createdAt": "2020-12-19T07:54:27.563Z",
+           "createdBy": "1c4dedeb-9cfa-4d50-b02c-bfceac20e194",
+           "issuer": "ba79eb02-c7b0-4840-9ab6-212e071812c8",
+           "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ba79eb02-c7b0-4840-9ab6-212e071812c8",
+           "name": "incubate bleeding-edge e-commerce",
+           "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_1890c081-12eb-4e16-b46a-a6db4e611b92.png",
+           "description": "The PCI application is down, input the 1080p monitor so we can hack the SSL protocol!",
+           "criteriaUrl": "https://caesar.info",
+           "criteriaNarrative": "Try to synthesize the COM matrix, maybe it will copy the 1080p feed!",
+           "alignments": [],
+           "tags": "cool",
+           "expires": {
+               "amount": null,
+               "duration": null
+           },
+           "extensions": {},
+           "recipient": {
+               "identity": "----SHA----",
+               "hashed": true,
+               "type": "email",
+               "plaintextIdentity": "first@hacker.com",
+               "salt": "---SALT---"
+           },
+           "issuedOn": "2019-09-25T07:51:07.170971Z",
+           "narrative": null,
+           "evidence": [],
+           "revoked": false,
+           "revocationReason": null
+       },
+        {
+           "entityType": "BadgeClass",
+           "entityId": "d2d1f289-16f7-4048-a48f-53eaf1498c9a",
+           "openBadgeId": "https://api.badgr.io/public/badges/d2d1f289-16f7-4048-a48f-53eaf1498c9a",
+           "createdAt": "2020-12-19T09:11:18.872Z",
+           "createdBy": "1c4dedeb-9cfa-4d50-b02c-bfceac20e194",
+           "issuer": "ba79eb02-c7b0-4840-9ab6-212e071812c8",
+           "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ba79eb02-c7b0-4840-9ab6-212e071812c8",
+           "name": "syndicate interactive users",
+           "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_d2d1f289-16f7-4048-a48f-53eaf1498c9a.png",
+           "description": "Use the virtual HDD hard drive, then you can input the mobile driver!",
+           "criteriaUrl": "https://dangelo.net",
+           "criteriaNarrative": "You can't hack the microchip without programming the back-end JBOD application!",
+           "alignments": [],
+           "tags": "hacker",
+           "recipient": {
+               "identity": "----SHA----",
+               "hashed": true,
+               "type": "email",
+               "plaintextIdentity": "second@hacker.com",
+               "salt": "---SALT---"
+           },
+           "issuedOn": "2019-09-25T07:51:07.170971Z",
+           "narrative": null,
+           "evidence": [],
+           "revoked": false,
+           "revocationReason": null,
+           "expires": {
+               "amount": null,
+               "duration": null
+           },
+           "extensions": {}
+       },
+        {
+           "entityType": "BadgeClass",
+           "entityId": "513bdfd3-258d-4049-a985-6ced95ab0a5e",
+           "openBadgeId": "https://api.badgr.io/public/badges/513bdfd3-258d-4049-a985-6ced95ab0a5e",
+           "createdAt": "2020-12-19T19:39:46.499Z",
+           "createdBy": "1c4dedeb-9cfa-4d50-b02c-bfceac20e194",
+           "issuer": "ba79eb02-c7b0-4840-9ab6-212e071812c8",
+           "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ba79eb02-c7b0-4840-9ab6-212e071812c8",
+           "name": "benchmark interactive supply-chains",
+           "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_513bdfd3-258d-4049-a985-6ced95ab0a5e.png",
+           "description": "We need to parse the virtual SMS panel!",
+           "criteriaUrl": "http://helen.org",
+           "criteriaNarrative": "We need to quantify the bluetooth RAM monitor!",
+           "alignments": [],
+           "tags": "hacker",
+           "recipient": {
+               "identity": "----SHA----",
+               "hashed": true,
+               "type": "email",
+               "plaintextIdentity": "third@hacker.com",
+               "salt": "---SALT---"
+           },
+           "issuedOn": "2019-09-25T07:51:07.170971Z",
+           "narrative": null,
+           "evidence": [],
+           "revoked": false,
+           "revocationReason": null,
+           "expires": {
+               "amount": null,
+               "duration": null
+           },
+           "extensions": {}
+       },
+        {
+           "entityType": "BadgeClass",
+           "entityId": "b2511d3a-56ca-42d4-95eb-10d384ae2cd4",
+           "openBadgeId": "https://api.badgr.io/public/badges/b2511d3a-56ca-42d4-95eb-10d384ae2cd4",
+           "createdAt": "2020-12-20T22:55:08.458Z",
+           "createdBy": "1c4dedeb-9cfa-4d50-b02c-bfceac20e194",
+           "issuer": "ba79eb02-c7b0-4840-9ab6-212e071812c8",
+           "issuerOpenBadgeId": "https://api.badgr.io/public/issuers/ba79eb02-c7b0-4840-9ab6-212e071812c8",
+           "name": "facilitate best-of-breed e-markets",
+           "image": "https://media.badgr.io/uploads/badges/issuer_badgeclass_b2511d3a-56ca-42d4-95eb-10d384ae2cd4.png",
+           "description": "The HDD driver is down, generate the mobile panel so we can compress the HTTP interface!",
+           "criteriaUrl": "http://daryl.info",
+           "criteriaNarrative": "If we reboot the capacitor, we can get to the AGP hard drive through the virtual COM bus!",
+           "alignments": [],
+           "tags": "hacker",
+           "recipient": {
+               "identity": "----SHA----",
+               "hashed": true,
+               "type": "email",
+               "plaintextIdentity": "fourth@hacker.com",
+               "salt": "---SALT---"
+           },
+           "issuedOn": "2019-09-25T07:51:07.170971Z",
+           "narrative": null,
+           "evidence": [],
+           "revoked": false,
+           "revocationReason": null,
+           "expires": {
+               "amount": null,
+               "duration": null
+           },
+           "extensions": {}
+       }
+   ]
+}
