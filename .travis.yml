@@ -1,9 +1,0 @@
-language: node_js
-node_js:
-  - v8
-install:
-  - cd functions && npm install
-lint:
-  - cd functions && npm run lint
-test:
-  - cd functions && npm run test:coverage
